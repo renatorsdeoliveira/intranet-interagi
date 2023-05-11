@@ -2,8 +2,8 @@
 <registry>
   <records interface="plone.base.interfaces.controlpanel.ISiteSchema"
            prefix="plone"
-           purge="false"
   >
+    <value key="enable_sitemap">True</value>
     <value key="site_title">Intranet Interagi</value>
   </records>
 </registry>
