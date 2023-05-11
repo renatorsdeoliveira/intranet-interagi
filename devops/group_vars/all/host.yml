@@ -1,0 +1,3 @@
+---
+hostname: 'intranet-interagi'
+fqdn: '{{ hostname }}.localhost'

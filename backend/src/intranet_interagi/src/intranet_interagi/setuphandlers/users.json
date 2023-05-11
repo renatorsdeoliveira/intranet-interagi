@@ -1,0 +1,19 @@
+{
+  "portal": [
+    {
+      "email": "renatorsdeoliveira@gmail.com",
+      "properties": {
+        "fullname": "Intranet Interagi",
+        "location": "World"
+      },
+      "groups": [
+      ],
+      "roles": [
+        "Member"
+      ],
+      "username": "intranet-interagi"
+    }
+  ],
+    "team": [
+  ]
+}
