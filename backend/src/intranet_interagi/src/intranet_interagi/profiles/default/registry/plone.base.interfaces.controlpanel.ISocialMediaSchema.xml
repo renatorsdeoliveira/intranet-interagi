@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records interface="plone.base.interfaces.controlpanel.ISocialMediaSchema"
+           prefix="plone"
+  >
+    <value key="share_social_data">True</value>
+    <value key="twitter_username">https://twitter.com/home</value>
+  </records>
+</registry>

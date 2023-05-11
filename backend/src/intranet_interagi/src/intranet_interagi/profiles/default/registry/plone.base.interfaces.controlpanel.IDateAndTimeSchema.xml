@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records interface="plone.base.interfaces.controlpanel.IDateAndTimeSchema"
+           prefix="plone"
+  >
+    <value key="available_timezones">
+      <element>America/Sao_Paulo</element>
+    </value>
+    <value key="first_weekday">6</value>
+    <value key="portal_timezone">America/Sao_Paulo</value>
+  </records>
+</registry>

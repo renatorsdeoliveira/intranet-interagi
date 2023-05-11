@@ -2,8 +2,11 @@
 <registry>
   <records interface="plone.base.interfaces.controlpanel.IMailSchema"
            prefix="plone"
-           purge="false"
   >
+    <value key="email_charset">utf-8</value>
+    <value key="email_from_address">teste@gmail.com</value>
     <value key="email_from_name">Intranet Interagi</value>
+    <value key="smtp_host">localhost</value>
+    <value key="smtp_port">25</value>
   </records>
 </registry>

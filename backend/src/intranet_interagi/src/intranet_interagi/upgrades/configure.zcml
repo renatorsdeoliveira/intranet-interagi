@@ -7,7 +7,7 @@
   <genericsetup:upgradeSteps
       profile="intranet_interagi:default"
       source="20230511001"
-      destination="20230229001"
+      destination="20230229002"
       >
     <genericsetup:upgradeDepends
         title="Update registry value"
