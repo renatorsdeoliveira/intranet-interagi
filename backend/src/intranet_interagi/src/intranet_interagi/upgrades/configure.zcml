@@ -3,17 +3,17 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     >
 
-  <!-- Example upgrade step
+  <!-- Example upgrade step -->
+
   <genericsetup:upgradeSteps
       profile="intranet_interagi:default"
       source="20230511001"
-      destination="20230229002"
+      destination="20230511002"
       >
     <genericsetup:upgradeDepends
         title="Update registry value"
         import_steps="plone.app.registry"
         />
   </genericsetup:upgradeSteps>
-  -->
 
 </configure>
