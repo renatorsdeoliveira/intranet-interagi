@@ -16,4 +16,19 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_interagi:default"
+      source="20230511002"
+      destination="20230512001"
+      >
+    <genericsetup:upgradeDepends
+        title="Instala tipo de conteúdo pessoa"
+        import_steps="typeinfo"
+        />
+    <genericsetup:upgradeDepends
+        title="Aplica permissionamento inicial"
+        import_steps="rolemap"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>
