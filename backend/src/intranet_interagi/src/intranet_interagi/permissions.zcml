@@ -7,9 +7,9 @@
   <configure zcml:condition="installed AccessControl.security">
     <!-- -*- extra stuff goes here -*- -->
     <permission
-      id="intranet_interagi.pessoa.add"
-      title="intranet_interagi: Add Pessoa"
-      />
+        id="intranet_interagi.pessoa.add"
+        title="intranet_interagi: Add Pessoa"
+        />
 
   </configure>
 

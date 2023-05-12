@@ -31,4 +31,3 @@ class IPessoa(Schema):
 @implementer(IPessoa)
 class Pessoa(Container):
     """Uma pessoa."""
-
