@@ -53,3 +53,16 @@ class TestPessoa:
             content = api.content.create(container=portal, **payload)
         assert content.portal_type == CONTENT_TYPE
         assert isinstance(content, Pessoa)
+
+    def test_review_state(self, portal, payload):
+        with api.env.adopt_roles(["Manager"]):
+            content = api.content.create(container=portal, **payload)
+        assert api.content.get_state(content) == "internal"
+
+
+    def test_transition_reviewer_can_publish_internally(self, portal, payload):
+            with api.env.adopt_roles(["Manager"]):
+                content = api.content.create(container=portal, **payload)
+            with api.env.adopt_roles(["Reviewer", "Member"]):
+                api.content.transition(content, "publish_internally")
+            assert api.content.get_state(content) == "internally_published"
