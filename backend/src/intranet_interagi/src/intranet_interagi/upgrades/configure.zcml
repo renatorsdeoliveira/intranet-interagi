@@ -46,4 +46,15 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_interagi:default"
+      source="20230512002"
+      destination="20230513001"
+      >
+    <genericsetup:upgradeDepends
+        title="Aplicar o behavior intranet_interagi.contact_info"
+        import_steps="typeinfo"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>
