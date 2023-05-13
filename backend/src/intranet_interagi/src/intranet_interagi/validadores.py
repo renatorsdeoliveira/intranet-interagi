@@ -1,4 +1,20 @@
+from intranet_interagi import _
+from zope.interface import Invalid
+
 import re
+
+
+class BadValue(Invalid):
+    """Exception raised when a provided value is informed."""
+
+    __doc__ = _("The value is not correct")
+
+
+def do_validation(data):
+    """Validate email set by the user."""
+    value = data.email
+    if not (value and is_valid_email(value)):
+        raise BadValue(f"The email {value} is not in the plone domain.")
 
 
 def is_valid_email(value: str) -> bool:
