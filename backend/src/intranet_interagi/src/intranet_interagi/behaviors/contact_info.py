@@ -12,7 +12,7 @@ from zope.interface import provider
 class IContactInfo(model.Schema):
     """Informações de contato."""
 
-    model.fieldset("contact", label=_("Contact"), fields=["email", "ramal"])
+    model.fieldset("contact", label=_("Contact"), fields=["email", "ramal", "predio"])
     email = Email(
         title=_("Email"),
         required=False,
@@ -25,4 +25,8 @@ class IContactInfo(model.Schema):
         ),
         required=False,
         constraint=is_valid_extension,
+    )
+
+    predio = schema.Choice(
+        title=_("Prédio"), required=False, vocabulary="intranet_interagi.predios"
     )

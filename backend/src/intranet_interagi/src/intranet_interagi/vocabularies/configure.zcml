@@ -1,10 +1,8 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
-  <!-- Example vocabulary
   <utility
-      name="intranet_interagi.vocabulary.industries"
-      component=".industries_vocabulary"
+      name="intranet_interagi.predios"
+      component=".predios.predios_vocabulary"
       />
-   -->
 
 </configure>
