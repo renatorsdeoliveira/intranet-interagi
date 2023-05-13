@@ -39,6 +39,7 @@ class TestArea:
     @pytest.mark.parametrize(
         "behavior",
         [
+            "intranet_interagi.contact_info",
             "plone.namefromtitle",
             "plone.shortname",
             "plone.excludefromnavigation",
@@ -110,3 +111,25 @@ class TestArea:
                 ramal="2022",
             )
         assert area.excluded_from_nav is True
+
+    def test_subscriber_modified(self, portal):
+        from zope.event import notify
+        from zope.lifecycleevent import ObjectModifiedEvent
+
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=portal,
+                type=CONTENT_TYPE,
+                title="Marketing",
+                description="Área de Marketing",
+                email="mktg@plone.org",
+                ramal="2022",
+            )
+        assert area.excluded_from_nav is True
+        # Agora, editamos o conteúdo, adicionando a
+        # informação de predio
+        with api.env.adopt_roles(["Manager"]):
+            area.predio = "sede"
+            notify(ObjectModifiedEvent(area))
+
+        assert area.excluded_from_nav is False
