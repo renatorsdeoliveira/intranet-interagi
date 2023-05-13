@@ -9,5 +9,14 @@
       <role name="Owner" />
       <role name="Editor" />
     </permission>
+
+    <permission acquire="True"
+                name="intranet_interagi: Add Area"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Editor" />
+    </permission>
   </permissions>
 </rolemap>
