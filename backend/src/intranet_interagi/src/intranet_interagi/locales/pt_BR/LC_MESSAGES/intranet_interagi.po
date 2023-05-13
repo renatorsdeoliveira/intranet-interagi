@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-25 17:12+0000\n"
+"POT-Creation-Date: 2023-05-13 14:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,3 +13,126 @@ msgstr ""
 "Language-Name: Portugu&es do Brasil\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#: intranet_interagi/behaviors/configure.zcml:12
+msgid "Add e-mail and ramal fields to a contact."
+msgstr "Adiciona os campos e-mail e ramal como informações de contato"
+
+#: intranet_interagi/profiles/default/types/Area.xml
+msgid "Area"
+msgstr "Área"
+
+#: intranet_interagi/content/pessoa.py:23
+msgid "Bio"
+msgstr "Biografia"
+
+#: intranet_interagi/behaviors/contact_info.py:15
+msgid "Contact"
+msgstr "Contato"
+
+#: intranet_interagi/behaviors/configure.zcml:12
+msgid "Contact Information"
+msgstr "Informações de Contato"
+
+#: intranet_interagi/content/area.py:14
+#: intranet_interagi/content/pessoa.py:14
+msgid "Default"
+msgstr "Padrão"
+
+#: intranet_interagi/vocabularies/predios.py:9
+msgid "Edifício Sede"
+msgstr "Edifício Sede"
+
+#: intranet_interagi/profiles/default/types/Area.xml
+#: intranet_interagi/profiles/default/types/Pessoa.xml
+msgid "Edit"
+msgstr "Editar"
+
+#: intranet_interagi/vocabularies/__init__.py:11
+msgid "Education"
+msgstr ""
+
+#: intranet_interagi/behaviors/contact_info.py:17
+msgid "Email"
+msgstr "E-mail"
+
+#: intranet_interagi/vocabularies/predios.py:10
+msgid "Filial 01"
+msgstr ""
+
+#: intranet_interagi/vocabularies/predios.py:11
+msgid "Filial 02"
+msgstr ""
+
+#: intranet_interagi/vocabularies/predios.py:12
+msgid "Filial 03"
+msgstr ""
+
+#: intranet_interagi/vocabularies/predios.py:13
+msgid "Filial 04"
+msgstr ""
+
+#: intranet_interagi/vocabularies/__init__.py:9
+msgid "Government"
+msgstr ""
+
+#: intranet_interagi/profiles.zcml:22
+msgid "Initial content for our website."
+msgstr "Conteúdo inicial para nossa intranet."
+
+#: intranet_interagi/profiles.zcml:22
+msgid "Intranet Interagi: Initial content"
+msgstr "Intranet Interagi: Conteúdo inicial"
+
+#: intranet_interagi/profiles.zcml:13
+msgid "Intranet Interagi: Install"
+msgstr "Intranet Interagi"
+
+#: intranet_interagi/profiles.zcml:30
+msgid "Intranet Interagi: Uninstall"
+msgstr "Intranet Interagi: Desinstalar"
+
+#: intranet_interagi/vocabularies/__init__.py:10
+msgid "NGO"
+msgstr ""
+
+#: intranet_interagi/content/pessoa.py:22
+msgid "Nome Completo"
+msgstr ""
+
+#: intranet_interagi/content/area.py:22
+msgid "Nome da área"
+msgstr ""
+
+#: intranet_interagi/profiles/default/types/Pessoa.xml
+msgid "Pessoa"
+msgstr ""
+
+#: intranet_interagi/profiles.zcml:13
+msgid "Policy package to install our site"
+msgstr "Pacote de configuração da intranet"
+
+#: intranet_interagi/behaviors/contact_info.py:31
+msgid "Prédio"
+msgstr ""
+
+#: intranet_interagi/behaviors/contact_info.py:23
+msgid "Ramal"
+msgstr ""
+
+#: intranet_interagi/content/area.py:23
+msgid "Sumário"
+msgstr ""
+
+#: intranet_interagi/validadores.py:10
+msgid "The value is not correct"
+msgstr "O valor está incorreto"
+
+#: intranet_interagi/profiles.zcml:30
+msgid "Uninstall Intranet Interagi setup."
+msgstr "Desinstala as configurações da Intranet Interagi"
+
+#: intranet_interagi/profiles/default/types/Area.xml
+#: intranet_interagi/profiles/default/types/Pessoa.xml
+msgid "View"
+msgstr "Visão"
