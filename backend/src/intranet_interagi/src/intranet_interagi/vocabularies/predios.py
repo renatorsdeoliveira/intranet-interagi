@@ -10,6 +10,7 @@ PREDIOS = [
     ("filial-01", _("Filial 01")),
     ("filial-02", _("Filial 02")),
     ("filial-03", _("Filial 03")),
+    ("filial-04", _("Filial 04")),
 ]
 
 

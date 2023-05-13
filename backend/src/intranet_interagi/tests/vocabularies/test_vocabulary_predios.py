@@ -23,6 +23,7 @@ class TestVocabIndustries:
             "filial-01",
             "filial-02",
             "filial-03",
+            "filial-04",
         ],
     )
     def test_token(self, token):
