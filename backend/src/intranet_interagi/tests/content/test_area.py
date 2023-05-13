@@ -85,3 +85,28 @@ class TestArea:
         with api.env.adopt_roles(["Reviewer", "Member"]):
             api.content.transition(content, "publish_internally")
         assert api.content.get_state(content) == "internally_published"
+
+    def test_subscriber_added_with_predio_value(self, portal):
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=portal,
+                type=CONTENT_TYPE,
+                title="Marketing",
+                description="Área de Marketing",
+                email="mktg@plone.org",
+                predio="sede",
+                ramal="2022",
+            )
+        assert area.excluded_from_nav is False
+
+    def test_subscriber_added_without_predio_value(self, portal):
+        with api.env.adopt_roles(["Manager"]):
+            area = api.content.create(
+                container=portal,
+                type=CONTENT_TYPE,
+                title="Marketing",
+                description="Área de Marketing",
+                email="mktg@plone.org",
+                ramal="2022",
+            )
+        assert area.excluded_from_nav is True

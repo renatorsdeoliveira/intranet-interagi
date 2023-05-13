@@ -1,3 +1,9 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
+  <subscriber
+      for="intranet_interagi.content.area.IArea
+           zope.lifecycleevent.IObjectAddedEvent"
+      handler=".area.added"
+      />
+
 </configure>
