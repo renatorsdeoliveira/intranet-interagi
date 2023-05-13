@@ -98,7 +98,7 @@ class TestArea:
                 predio="sede",
                 ramal="2022",
             )
-        assert area.excluded_from_nav is False
+        assert area.exclude_from_nav is False
 
     def test_subscriber_added_without_predio_value(self, portal):
         with api.env.adopt_roles(["Manager"]):
@@ -110,7 +110,7 @@ class TestArea:
                 email="mktg@plone.org",
                 ramal="2022",
             )
-        assert area.excluded_from_nav is True
+        assert area.exclude_from_nav is True
 
     def test_subscriber_modified(self, portal):
         from zope.event import notify
@@ -125,11 +125,11 @@ class TestArea:
                 email="mktg@plone.org",
                 ramal="2022",
             )
-        assert area.excluded_from_nav is True
+        assert area.exclude_from_nav is True
         # Agora, editamos o conteúdo, adicionando a
         # informação de predio
         with api.env.adopt_roles(["Manager"]):
             area.predio = "sede"
             notify(ObjectModifiedEvent(area))
 
-        assert area.excluded_from_nav is False
+        assert area.exclude_from_nav is False
