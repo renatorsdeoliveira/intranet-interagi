@@ -77,6 +77,10 @@ session.headers.update(
 
 # Criar documentos
 for path, data in CONTEUDOS.items():
+    response = session.get(f"{BASE_URL}{path}")
+    if response.status_code != 404:
+        logger.info(f"Ignorando '{path}': Conteúdo já existe")
+        continue
     id_conteudo = data["id"]
     # Obtem o caminho para o "pai" desse novo documento
     # /documentos/norma-001 -> /documentos
