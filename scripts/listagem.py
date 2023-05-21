@@ -50,6 +50,12 @@ data = response.json()
 titulo = data["title"]
 logger.info(f"O título do portal é {titulo}")
 
+# Salvar os dados recebidos do portal em um arquivo json
+arquivo_dados = PASTA_DADOS / "portal.json"
+with open(arquivo_dados, "w") as fh:
+    json.dump(data, fh, indent=2)
+    logger.info(f"Dados da raiz do portal salvos em {arquivo_dados}")
+
 # Listagem de todos os conteúdos no portal, ordenados pelo caminho
 ## Ref: https://6.docs.plone.org/plone.restapi/docs/source/endpoints/searching.html#search
 search_url = f"{BASE_URL}/@search?sort_on=path"
@@ -57,7 +63,6 @@ response = session.get(BASE_URL)
 data = response.json()
 total_conteudo = data["items_total"]
 logger.info(f"O portal conta com {total_conteudo} itens de conteúdo")
-
 
 # Salvar os dados recebidos do portal em um arquivo json
 arquivo_dados = PASTA_DADOS / "listagem.json"
