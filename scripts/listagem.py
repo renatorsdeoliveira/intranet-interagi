@@ -3,6 +3,7 @@ import json
 import logging
 import requests
 
+
 # Define como faremos o log das ações
 logging.basicConfig()
 logger = logging.getLogger("Interagi Listagem")
@@ -43,29 +44,15 @@ session.headers.update(
     {"Authorization": f"Bearer {token}"}
 )
 
-# Acessar a raiz do portal
-## Ref: https://6.docs.plone.org/plone.restapi/docs/source/usage/content.html#reading-a-resource-with-get
-response = session.get(BASE_URL)
-data = response.json()
-titulo = data["title"]
-logger.info(f"O título do portal é {titulo}")
+URLS = (
+    (BASE_URL, "portal"),
+    (f"{BASE_URL}/@search?sort_on=path", "listagem"),
+)
 
-# Salvar os dados recebidos do portal em um arquivo json
-arquivo_dados = PASTA_DADOS / "portal.json"
-with open(arquivo_dados, "w") as fh:
-    json.dump(data, fh, indent=2)
-    logger.info(f"Dados da raiz do portal salvos em {arquivo_dados}")
-
-# Listagem de todos os conteúdos no portal, ordenados pelo caminho
-## Ref: https://6.docs.plone.org/plone.restapi/docs/source/endpoints/searching.html#search
-search_url = f"{BASE_URL}/@search?sort_on=path"
-response = session.get(BASE_URL)
-data = response.json()
-total_conteudo = data["items_total"]
-logger.info(f"O portal conta com {total_conteudo} itens de conteúdo")
-
-# Salvar os dados recebidos do portal em um arquivo json
-arquivo_dados = PASTA_DADOS / "listagem.json"
-with open(arquivo_dados, "w") as fh:
-    json.dump(data, fh, indent=2)
-    logger.info(f"Dados da listagem salvos em {arquivo_dados}")
+for url, nome in URLS:
+    response = session.get(url)
+    data = response.json()
+    arquivo_dados = PASTA_DADOS / f"{nome}.json"
+    with open(arquivo_dados, "w") as fh:
+        json.dump(data, fh, indent=2)
+        logger.info(f"Dados {nome} salvos em {arquivo_dados}")
