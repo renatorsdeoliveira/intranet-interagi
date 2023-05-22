@@ -3,8 +3,8 @@ from intranet_interagi.services.meteo import openmeteo
 from plone import api
 from plone.restapi.services import Service
 
-class MeteoGet(Service):
 
+class MeteoGet(Service):
     @property
     def coordinates(self) -> tuple:
         """Retorna latitude e longitude de Curitiba."""
