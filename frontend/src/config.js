@@ -12,7 +12,7 @@
  *    }
  * }
  */
-
+import AreaView from './components/View/AreaView';
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
 
@@ -24,5 +24,9 @@ export default function applyConfig(config) {
     defaultLanguage: 'pt-br',
   };
   config.blocks.blocksConfig.codeBlock.defaultStyle = 'light';
+  config.views.contentTypesViews = {
+    ...config.views.contentTypesViews,
+    Area: AreaView,
+  };
   return config;
 }
