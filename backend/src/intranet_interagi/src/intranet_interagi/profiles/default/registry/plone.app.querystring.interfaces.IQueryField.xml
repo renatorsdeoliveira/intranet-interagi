@@ -24,4 +24,25 @@
     <value key="vocabulary">intranet_interagi.areas</value>
   </records>
 
+  <!-- Opção de busca por predio -->
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.predio"
+  >
+    <value key="title"
+           i18n:translate="label_area"
+    >Predio</value>
+    <value key="description"
+           i18n:translate="description_area"
+    >Categorization by Predio.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="group"
+           i18n:translate=""
+    >Intranet</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+    </value>
+    <value key="vocabulary">intranet_interagi.predios</value>
+  </records>
+
 </registry>

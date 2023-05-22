@@ -84,4 +84,23 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_interagi:default"
+      source="20230522002"
+      destination="20230522003"
+      >
+    <genericsetup:upgradeDepends
+        title="Adiciona o indice de predio"
+        import_steps="catalog"
+        />
+    <genericsetup:upgradeDepends
+        title="Adiciona busca por predio"
+        import_steps="plone.app.registry"
+        />
+    <upgradeStep
+        title="Reindexa os tipos pessoa e area"
+        handler=".catalog.reindexa_predio"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>

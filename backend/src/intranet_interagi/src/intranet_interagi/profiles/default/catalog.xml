@@ -5,6 +5,11 @@
   >
     <indexed_attr value="area" />
   </index>
+  <index meta_type="FieldIndex"
+         name="predio"
+  >
+    <indexed_attr value="predio" />
+  </index>
   <!-- Metadata
   <column value="industry" />
 -->
