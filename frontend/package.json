@@ -28,8 +28,17 @@
     "@eeacms/volto-accordion-block",
     "@kitconcept/volto-blocks-grid",
     "@kitconcept/volto-slider-block",
-    "@eeacms/volto-matomo"
+    "@eeacms/volto-matomo",
+    "@plonegovbr/volto-code-block"
   ],
+  "dependencies": {
+    "@eeacms/volto-accordion-block": "*",
+    "@eeacms/volto-matomo": "*",
+    "@kitconcept/volto-blocks-grid": "*",
+    "@kitconcept/volto-slider-block": "*",
+    "@plone/volto": "17.0.0-alpha.7",
+    "@plonegovbr/volto-code-block": "*"
+  },
   "jest": {
     "modulePathIgnorePatterns": [
       "api"
@@ -137,13 +146,6 @@
   ],
   "engines": {
     "node": "^16 || ^18"
-  },
-  "dependencies": {
-    "@eeacms/volto-accordion-block": "*",
-    "@eeacms/volto-matomo": "*",
-    "@kitconcept/volto-blocks-grid": "*",
-    "@kitconcept/volto-slider-block": "*",
-    "@plone/volto": "17.0.0-alpha.7"
   },
   "devDependencies": {
     "@plone/scripts": "^2.1.5",
