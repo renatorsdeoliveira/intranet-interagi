@@ -13,6 +13,7 @@
  * }
  */
 import AreaView from './components/View/AreaView';
+import PessoaView from './components/View/PessoaView';
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
 
@@ -27,6 +28,7 @@ export default function applyConfig(config) {
   config.views.contentTypesViews = {
     ...config.views.contentTypesViews,
     Area: AreaView,
+    Pessoa: PessoaView,
   };
   return config;
 }
