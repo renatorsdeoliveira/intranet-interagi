@@ -23,5 +23,6 @@ export default function applyConfig(config) {
     supportedLanguages: ['pt-br'],
     defaultLanguage: 'pt-br',
   };
+  config.blocks.blocksConfig.codeBlock.defaultStyle = 'light';
   return config;
 }
