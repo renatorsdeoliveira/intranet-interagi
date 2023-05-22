@@ -73,4 +73,15 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_interagi:default"
+      source="20230522001"
+      destination="20230522002"
+      >
+    <genericsetup:upgradeDepends
+        title="Adiciona busca por Area"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>
