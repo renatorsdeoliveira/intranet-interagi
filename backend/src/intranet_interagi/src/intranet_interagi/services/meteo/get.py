@@ -1,3 +1,4 @@
+from intranet_interagi import logger
 from intranet_interagi.services.meteo import openmeteo
 from plone import api
 from plone.restapi.services import Service
@@ -20,4 +21,5 @@ class MeteoGet(Service):
         timezone = self.timezone
         dados = openmeteo.dados_clima(latitude, longitude, timezone)
         dados["@id"] = f"{portal_url}/@meteo"
+        logger.info("Retorna dados do clima")
         return dados
