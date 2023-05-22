@@ -10,4 +10,8 @@
            zope.lifecycleevent.IObjectModifiedEvent"
       handler=".area.modified"
       />
+  <subscriber
+      for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
+      handler=".post_login.login_handler"
+      />
 </configure>
