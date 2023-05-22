@@ -1,17 +1,6 @@
-from pathlib import Path
-import json
-import logging
 import requests
 
-# Define como faremos o log das ações
-logging.basicConfig()
-logger = logging.getLogger("Interagi Listagem")
-logger.setLevel(logging.INFO)
 
-
-# Constantes utilizadas no script
-PASTA_ATUAL = Path(__file__).parent.resolve()
-PASTA_DADOS = PASTA_ATUAL / "data"
 BASE_URL = "https://api.open-meteo.com/v1/forecast"
 
 
@@ -51,13 +40,3 @@ def dados_clima(latitude: str, longitude: str, timezone: str) -> dict:
     )
     data = response.json()
     return _formatar_resposta(data)
-
-
-latitude, longitude = "-25.43", "-49.27"
-timezone = "America/Sao_Paulo"
-dados = dados_clima(latitude=latitude, longitude=longitude, timezone=timezone)
-
-arquivo_dados = PASTA_DADOS / "meteo.json"
-with open(arquivo_dados, "w") as fh:
-    json.dump(dados, fh, indent=2)
-    logger.info(f"Dados openmeteo salvos em {arquivo_dados}")
