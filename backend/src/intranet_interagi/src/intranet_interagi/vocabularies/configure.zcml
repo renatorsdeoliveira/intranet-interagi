@@ -5,4 +5,9 @@
       component=".predios.predios_vocabulary"
       />
 
+  <utility
+      name="intranet_interagi.areas"
+      component=".areas.areas_vocabulary"
+      />
+
 </configure>
