@@ -11,6 +11,7 @@
     "react"
   ],
   "addons": [
+    "@kitconcept/volto-light-theme",
     "@eeacms/volto-accordion-block",
     "@kitconcept/volto-blocks-grid",
     "@kitconcept/volto-slider-block",
