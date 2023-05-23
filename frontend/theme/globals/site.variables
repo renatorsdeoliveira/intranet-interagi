@@ -1,4 +1,0 @@
-/* The size of page text  */
-@importGoogleFonts: true;
-@fontSize : 16px;
-@fontName: Kanit;
