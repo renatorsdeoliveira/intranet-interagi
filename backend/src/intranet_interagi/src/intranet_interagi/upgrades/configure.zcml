@@ -103,4 +103,15 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="intranet_interagi:default"
+      source="20230522003"
+      destination="20230523001"
+      >
+    <upgradeStep
+        title="Instala o produto collective.bookmarks"
+        handler=".setup.instala_bookmarks"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>

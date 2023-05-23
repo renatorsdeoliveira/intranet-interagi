@@ -19,6 +19,7 @@
     "@kitconcept/volto-blocks-grid",
     "@kitconcept/volto-slider-block",
     "@eeacms/volto-matomo",
+    "@plone-collective/volto-bookmarks",
     "@plonegovbr/volto-code-block"
   ],
   "scripts": {
@@ -32,6 +33,7 @@
     "@kitconcept/volto-heading-block": "*",
     "@kitconcept/volto-separator-block": "*",
     "@kitconcept/volto-slider-block": "*",
+    "@plone-collective/volto-bookmarks": "*",
     "@plonegovbr/volto-code-block": "*"
   },
   "devDependencies": {
