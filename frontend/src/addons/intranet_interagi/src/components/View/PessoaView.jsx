@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 import { Icon, UniversalLink } from '@plone/volto/components';
 import houseSVG from '@plone/volto/icons/home.svg';
 import { List, Table } from 'semantic-ui-react';
+import { ToggleBookmarkButton } from '@plone-collective/volto-bookmarks/components';
 
 /**
  * PessoaView view component class.
@@ -22,6 +23,7 @@ const PessoaView = (props) => {
     <div id="page-document" className="ui container viewwrapper area-view">
       <header>
         <h1 className="documentFirstHeading">{content.title}</h1>
+        <ToggleBookmarkButton />
       </header>
       <div>
         <p className="description documentDescription">{content.description}</p>
