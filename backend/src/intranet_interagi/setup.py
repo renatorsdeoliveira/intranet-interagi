@@ -48,7 +48,7 @@ setup(
         "setuptools",
         "Plone",
         "prettyconf",
-        "plone.api", 
+        "plone.api",
         "collective.bookmarks",
     ],
     extras_require={

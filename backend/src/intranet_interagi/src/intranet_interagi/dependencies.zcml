@@ -4,5 +4,5 @@
   <include package="plone.volto" />
   <include package="plone.restapi" />
   <include package="collective.bookmarks" />
-  
+
 </configure>

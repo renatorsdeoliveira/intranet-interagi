@@ -2,14 +2,14 @@
 // it is injected
 
 :root {
-    --narrow-container-width: 1100px;
-    --default-container-width: 1100px;
-  }
-  
-  .logo > a > img {
-    width: 150px;
-  }
-  body.contenttype-plone-site #main .breadcrumbs{
-    display: block;
-  }
- 
+  --narrow-container-width: 1100px;
+  --default-container-width: 1100px;
+}
+
+.logo > a > img {
+  width: 150px;
+}
+
+body.contenttype-plone-site #main .breadcrumbs {
+  display: block;
+}
