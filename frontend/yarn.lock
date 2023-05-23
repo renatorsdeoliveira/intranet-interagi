@@ -2503,6 +2503,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kitconcept/volto-button-block@npm:*":
+  version: 2.1.0
+  resolution: "@kitconcept/volto-button-block@npm:2.1.0"
+  checksum: fc14bdd8196bc1a1c0fc1e0df61795245bfe34ca063b07a9a4668dfc7eb7d8869129a2fdf25983166120384d159e07e9825412e19916dbef951762f84cc0ce86
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-heading-block@npm:*":
+  version: 2.2.0
+  resolution: "@kitconcept/volto-heading-block@npm:2.2.0"
+  dependencies:
+    react-contenteditable: 3.3.6
+  checksum: ac417809bc7f2f4a4c1b0392fee872b4662c9b4414aed4cc76f9664b61c13364169a1a01f65ced9303f7d08d46b0692e7a814c5c50b5d10866f5adb8adea8df7
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-separator-block@npm:*":
+  version: 3.0.2
+  resolution: "@kitconcept/volto-separator-block@npm:3.0.2"
+  peerDependencies:
+    "@plone/volto": ">=16.0.0"
+  checksum: 31bb6d9ba068088b128b692628701d0119433b2749d0ebedd73462ab43c00e4dfad10fd65a96192325d6e8e02374f17715053236c0ade8a024db750ec92e336d
+  languageName: node
+  linkType: hard
+
 "@kitconcept/volto-slider-block@npm:*":
   version: 4.3.0
   resolution: "@kitconcept/volto-slider-block@npm:4.3.0"
@@ -13508,6 +13533,9 @@ __metadata:
     "@eeacms/volto-accordion-block": "*"
     "@eeacms/volto-matomo": "*"
     "@kitconcept/volto-blocks-grid": "*"
+    "@kitconcept/volto-button-block": "*"
+    "@kitconcept/volto-heading-block": "*"
+    "@kitconcept/volto-separator-block": "*"
     "@kitconcept/volto-slider-block": "*"
     "@plone/scripts": "*"
     "@plonegovbr/volto-code-block": "*"
@@ -18735,7 +18763,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.x, prop-types@npm:^15.0.0, prop-types@npm:^15.5.10, prop-types@npm:^15.5.7, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:15.x, prop-types@npm:^15.0.0, prop-types@npm:^15.5.10, prop-types@npm:^15.5.7, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.1, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -19292,6 +19320,18 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: e432b7cb0df57e8f0bcdc3b012d2e93fcbcb6092c9e0f85654788d5ebfc4442536d8cc35b2418061ba3c4afb8b7788cc101c606d86a1732407921de7a9244c8d
+  languageName: node
+  linkType: hard
+
+"react-contenteditable@npm:3.3.6":
+  version: 3.3.6
+  resolution: "react-contenteditable@npm:3.3.6"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    prop-types: ^15.7.1
+  peerDependencies:
+    react: ">=16.3"
+  checksum: 3ff8b78e63ddcdc4b93cf19ec022872116d2d8f672b2ff1b9ae12e9d807b88530d2b17bef2de9ab8a61a182bd9338388f11356cf1681d7c7894642c37be65def
   languageName: node
   linkType: hard
 

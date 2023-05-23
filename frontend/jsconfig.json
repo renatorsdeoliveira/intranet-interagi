@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
         "paths": {
-            "intranet_interagi": [
-                "addons/intranet_interagi/src"
-            ],
             "@kitconcept/volto-light-theme": [
                 "addons/volto-light-theme/src"
+            ],
+            "intranet_interagi": [
+                "addons/intranet_interagi/src"
             ]
         },
         "baseUrl": "src"

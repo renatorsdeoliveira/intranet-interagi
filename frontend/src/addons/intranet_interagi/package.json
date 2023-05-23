@@ -13,6 +13,9 @@
   "addons": [
     "@kitconcept/volto-light-theme",
     "@eeacms/volto-accordion-block",
+    "@kitconcept/volto-button-block",
+    "@kitconcept/volto-heading-block",
+    "@kitconcept/volto-separator-block",
     "@kitconcept/volto-blocks-grid",
     "@kitconcept/volto-slider-block",
     "@eeacms/volto-matomo",
@@ -25,6 +28,9 @@
     "@eeacms/volto-accordion-block": "*",
     "@eeacms/volto-matomo": "*",
     "@kitconcept/volto-blocks-grid": "*",
+    "@kitconcept/volto-button-block": "*",
+    "@kitconcept/volto-heading-block": "*",
+    "@kitconcept/volto-separator-block": "*",
     "@kitconcept/volto-slider-block": "*",
     "@plonegovbr/volto-code-block": "*"
   },
