@@ -25,19 +25,13 @@
     "build-storybook": "build-storybook"
   },
   "addons": [
-    "@eeacms/volto-accordion-block",
-    "@kitconcept/volto-blocks-grid",
-    "@kitconcept/volto-slider-block",
-    "@eeacms/volto-matomo",
-    "@plonegovbr/volto-code-block"
+    "intranet_interagi"
+  ],
+  "workspaces": [
+    "src/addons/intranet_interagi"
   ],
   "dependencies": {
-    "@eeacms/volto-accordion-block": "*",
-    "@eeacms/volto-matomo": "*",
-    "@kitconcept/volto-blocks-grid": "*",
-    "@kitconcept/volto-slider-block": "*",
-    "@plone/volto": "17.0.0-alpha.7",
-    "@plonegovbr/volto-code-block": "*"
+    "@plone/volto": "17.0.0-alpha.7"
   },
   "jest": {
     "modulePathIgnorePatterns": [

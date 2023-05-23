@@ -1,1 +1,5 @@
-{}
+{
+  "intranet_interagi": {
+    "local": "addons/intranet_interagi/src"
+  }
+}

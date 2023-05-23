@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
-        "paths": {},
+        "paths": {
+            "intranet_interagi": [
+                "addons/intranet_interagi/src"
+            ]
+        },
         "baseUrl": "src"
     }
 }
