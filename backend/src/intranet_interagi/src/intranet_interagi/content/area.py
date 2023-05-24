@@ -1,7 +1,6 @@
 from intranet_interagi import _
 from plone import api
 from plone.dexterity.content import Container
-from plone.supermodel import model
 from plone.supermodel.model import Schema
 from zope import schema
 from zope.interface import implementer
