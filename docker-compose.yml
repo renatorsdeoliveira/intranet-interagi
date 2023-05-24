@@ -41,6 +41,8 @@ services:
   frontend:
     image: ghcr.io/renatorsdeoliveira/intranet-interagi-frontend:latest
     platform: linux/amd64
+    deploy:
+      replicas: 2
     environment:
       RAZZLE_INTERNAL_API_PATH: http://backend:8080/Plone
     labels:
@@ -59,6 +61,8 @@ services:
   backend:
     image: ghcr.io/renatorsdeoliveira/intranet-interagi-backend:latest
     platform: linux/amd64
+    deploy:
+      replicas: 2
     environment:
       RELSTORAGE_DSN: "dbname='plone' user='plone' host='db' password='plone'"
     labels:
