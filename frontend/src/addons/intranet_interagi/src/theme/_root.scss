@@ -1,0 +1,24 @@
+// Largura
+:root {
+    --layout-container-width: #{$_layout-container-width};
+    --default-container-width: #{$_default-container-width};
+    --narrow-container-width: #{$_narrow-container-width};
+  }
+  
+  .logo > a > img {
+    width: 150px;
+  }
+  
+  body {
+    background-color: $page-background;
+  }
+  
+  a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+      color: $link-color-hover;
+      text-decoration: none;
+    }
+  }
+  

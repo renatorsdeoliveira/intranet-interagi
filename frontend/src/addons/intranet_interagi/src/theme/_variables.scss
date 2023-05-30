@@ -1,2 +1,18 @@
-$narrow-container-width: 1100px;
-$default-container-width: 1100px;
+// Largura
+$_layout-container-width: 1440px !default;
+$_default-container-width: 1100px !default;
+$_narrow-container-width: 1100px !default;
+
+// Fonte
+$custom-fontname: 'Arial' !default;
+$page-font-template: $custom-fontname, sans-serif !default;
+
+// Cores
+$white: #fff;
+$blue-for-grey-contrast: #0070a2 !default;
+$darkBlue: #023d6b !default;
+
+// Outras Variáveis
+$link-color: $darkBlue;
+$link-color-hover: $blue-for-grey-contrast;
+$page-background: $white;
